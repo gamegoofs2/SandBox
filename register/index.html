@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="register.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+  </head>
+  <body>
+      <div id="wrapper">
+          <div id="fields" onkeydown="keypress(event)">
+              <fieldset>
+                  <legend>Register</legend>
+                  <span class="error" id="error">Error<br /></span>
+                  <label for="username">Username:</label> <input type="text" name="name" id="username"/><span class="error" id="user">Taken</span>
+                       <br /><br />
+                  <label for="password">Password:</label> <input type="password" id="password"/>
+                       <br /><br />
+                  <label for="password2">Re-enter:</label> &nbsp;&nbsp;<input type="password" id="password2"/>
+                       <br /><br />
+                  <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email"/>
+                       <br /><br />
+                  <label for="email2">Re-enter:</label> &nbsp;&nbsp;<input type="text" id="email2"/>
+                       <br /><br />
+                  <!--<label for="image">User Image:</label> &nbsp;<input type="text" type="text" id="image"/><br />
+                  ie. http://www.site.com/image.jpg<br /><br />-->
+                  <input type="submit" value="Sign Up" onclick="register_click()" />
+              </fieldset>
+          </div>
+          <div id="success">
+              Registration Successful! Please <a href="../login">login</a>.
+          </div>
+      </div>
+  </body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Chat</title>
+<link href="chatstyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="js/chat.js"></script>
+<script type="text/javascript" src="login/logout.js"></script>
+</head>
+
+<body>
+	<div id="wrapper-chat">
+		<div id="title-wrapper">
+			<div id="who">Who's online</div>
+			<div id="title"><span class="bold">Topic:</span></div>
+		</div>
+		<div id="body">
+			<div id="user">
+                            <span class="user">
+                                <img src="pic.jpg" />
+                                <span>Evan</span>
+                            </span>
+			</div>
+			<div id="chat">
+			</div>
+		</div>
+		<div id="message">
+		    <span class="bold">Message:</span>
+		    <input id="msg" type="text" onkeydown="keypress(event, document.getElementById('msg').value)" />
+                    <input type="submit" value="Submit" onclick="send(document.getElementById('msg').value)" />
+		</div>
+                <br /><a href="javascript:logout();">Logout</a>
+	</div>
+</body>
+
+</html>

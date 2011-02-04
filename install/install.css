@@ -1,0 +1,33 @@
+body {
+background-image: url('images/texture.jpg');
+}
+#wrapper {
+/* Shadow */
+-webkit-box-shadow:1px 1px 3px black;
+-moz-box-shadow:1px 1px 3px black;
+box-shadow:1px 1px 3px black;
+
+/* Rounded Corners */
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+
+/* Background Gradient */
+background-color:#36a5d9;
+background-image: url('images/gradient.png');
+background-image: -moz-linear-gradient(100% 100% 90deg, #227399, #36a5d9);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#36a5d9), to(#227399));
+
+width:400px;
+padding: 10px;
+margin:auto;
+margin-top:200px;
+}
+.mini {
+font-size:15px;
+font-weight:normal;
+color:#474F45;
+}
+#form-wrapper {
+font-weight:bold;
+}

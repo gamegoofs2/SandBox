@@ -1,0 +1,44 @@
+/* 
+    Document   : login
+    Created on : Dec 9, 2010, 3:57:39 PM
+    Author     : Evan
+    Description:
+        Style rules for login page (login/index.php).
+*/
+#wrapper {
+/*Basic style of login box*/
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #36a5d9;
+
+/*Shadow */
+    -webkit-box-shadow:1px 1px 3px black;
+    -moz-box-shadow:1px 1px 3px black;
+    box-shadow:1px 1px 3px black;
+/*Rounded Corners*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+
+}
+
+#login {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 50px;
+    height: 20px;
+    background-color: #227399;
+    border: 1px black solid;
+    text-decoration: none;
+    color:black;
+}
+.error {
+    color:red;
+    display: none;
+}
+
