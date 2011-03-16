@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="jquery.min.js"></script>
+    <script>
+    setInterval("request()",500);
+    function request() {
+      $.post("display.php",
+   	function(data){
+    	 document.getElementById("block").innerHTML = data;
+   	});
+    }
+    
+    function send(message) {
+      $.post("post.php", { msg: message },
+        function(data) {
+          if(data) {
+            alert("Message failed to send" + data);
+          }
+        });
+    }
+    </script>
+  </head>
+  <body>
+    <div id="update">
+      <input id=msg type="text" />
+      <input type="submit" value="Send" onclick="send(document.getElementById('msg').value);" />
+    </div>
+    <div id="block"></div>
+  </body>
+</html>

@@ -4,11 +4,11 @@
             return 0;
         }
         
-        $username = $username . "\n";
+        $username = strtolower($username);
         
         $file = file("../users.txt");
         foreach ($file as $array) {
-            if($array == $username) {
+            if($array == $username."\n") {
                 return 0;
             }
         }
