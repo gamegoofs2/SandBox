@@ -1,4 +1,5 @@
 <?php
+//die("Hello World");
 $msg = $_POST['msg'];
 $user = $_POST['user'];
 

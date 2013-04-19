@@ -1,4 +1,4 @@
-function setcookie(name, value, expire) {
+function setcookie(usrName, value, expire) {
     //If an expiration date is provided.
     if(expire) {
         var date = new Date();
@@ -10,7 +10,7 @@ function setcookie(name, value, expire) {
         var expires = "";
     }
     //Build cookie string
-    document.cookie = name + "=" + escape(value) + expires + "; path=/";
+    document.cookie = usrName + "=" + escape(value) + expires + "; path=/";
 }
 
 function getCookie(name) {

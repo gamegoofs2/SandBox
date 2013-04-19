@@ -1,8 +1,8 @@
-var user = getCookie('username');
+/*var user = getCookie('username');
 var password = getCookie('password');
 if(!user && !password) {
     window.location = 'login/index.html';
-}
+}*/
 
 setInterval("request()",500);
 function request() {
@@ -15,15 +15,20 @@ function request() {
 }
 
 function send(message) {
-    $.post("lib/post.php", { msg: message, user: user },
+	alert("Hello Wolrd!");
+    /*$.post("lib/post.php", { msg: message, user: user },
         function(data) {
+            alert("Test: " + data);
           if(data) {
             alert("Message failed to send:" + data);
           }
           else {
               document.getElementById('msg').value = "";
           }
-        });
+        });*/
+        $.post('lib/post.php', { msg: message })
+            .done(function() { document.getElementById('msg').value = ""; })
+            .fail(function() { alert("Message failed to send: " + data); });
 }
 
 function keypress(e, message) {
